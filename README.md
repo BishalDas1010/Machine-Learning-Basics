@@ -1,74 +1,96 @@
-# 📊 Linear Regression from Scratch in Python
+# 📘 Machine Learning Algorithms — Study & Implementation from Scratch
 
-This project implements **Linear Regression from scratch** (without using scikit-learn's regression model) to predict placement packages based on CGPA. It's a simple demonstration of the mathematics behind regression and data visualization using `matplotlib`.
-
----
-
-## 📁 Dataset
-The dataset used is `placement (2).csv` which contains:
-- `cgpa`: Student's CGPA
-- `package`: Placement package received (in LPA)
+Welcome to this hands-on repository dedicated to learning, implementing, and visualizing various **Machine Learning (ML) algorithms** from scratch using Python. Perfect for students, beginners, and aspiring ML engineers who want to understand **how algorithms work internally** — not just use them.
 
 ---
 
-## 📌 Features
-- Manual implementation of Linear Regression (no use of `LinearRegression` from sklearn)
-- Calculates:
-  - **Slope (m)**
-  - **Intercept (b)**
-- Predicts values using the regression equation
-- Plots data points and the regression line for visualization
+## 🎯 Repository Goals
+
+- Understand the **mathematics** behind popular ML algorithms.
+- Implement algorithms from **scratch** without using high-level ML libraries.
+- **Visualize** results using real-world or synthetic datasets.
+- Build strong foundations for **ML interviews**, research, or advanced projects.
 
 ---
 
-## 🧐 Math Behind the Model
-We use the Least Squares Method:
+## 📚 Implemented Algorithms
 
-\[
-m = \frac{\sum{(x - \bar{x})(y - \bar{y})}}{\sum{(x - \bar{x})^2}} \quad , \quad b = \bar{y} - m \bar{x}
-\]
+| Algorithm | Type | Description |
+|----------|------|-------------|
+| [Linear Regression](./linear_regression.py) | Supervised | Predict continuous values based on input features. |
+| Logistic Regression | Supervised | Classification algorithm for binary outcomes. *(coming soon)* |
+| K-Nearest Neighbors (KNN) | Supervised | Instance-based learning for classification/regression. *(coming soon)* |
+| Decision Tree | Supervised | Tree-based structure for classification and regression. *(coming soon)* |
+| K-Means Clustering | Unsupervised | Partition data into k distinct clusters. *(coming soon)* |
+| Naive Bayes | Supervised | Probabilistic classifier based on Bayes' Theorem. *(coming soon)* |
+| Principal Component Analysis (PCA) | Unsupervised | Dimensionality reduction technique. *(coming soon)* |
 
-Where:
-- \( m \): slope of the line
-- \( b \): y-intercept
+> ✅ More algorithms will be added progressively, including SVM, Random Forest, and Gradient Boosting!
 
 ---
 
-## 🚀 How to Run
+## 🧠 Math Behind ML
 
-1. **Clone the repository**
+Every algorithm here focuses on:
+- Derivation of formulas
+- Understanding the loss functions
+- Step-by-step gradient calculation (if applicable)
+- Real-world intuition
+
+---
+
+## 📂 Project Structure
+
 ```bash
-git clone https://github.com/yourusername/linear-regression-from-scratch.git
-cd linear-regression-from-scratch
+├── linear_regression.py         # Linear regression from scratch
+├── logistic_regression.py       # Coming soon
+├── knn.py                       # Coming soon
+├── decision_tree.py             # Coming soon
+├── datasets/
+│   └── placement.csv
+├── README.md
 ```
 
-2. **Install the required libraries**
+
+
+## 🛠️ Technologies Used
+
+- Python 🐍
+- Pandas & NumPy for data manipulation
+- Matplotlib for visualization
+- scikit-learn only for comparison (not used in from-scratch code)
+
+
+
+## 🚀 Getting Started
+
+1. Clone the repository
+```bash
+git clone https://github.com/yourusername/ml-algorithms-from-scratch.git
+cd ml-algorithms-from-scratch
+```
+
+2. Install required libraries
 ```bash
 pip install pandas matplotlib scikit-learn
 ```
 
-3. **Run the script**
+3. Run the code
 ```bash
 python linear_regression.py
 ```
 
 ---
 
-## 📊 Output
-- Green dots = actual data points
-- Red line = regression prediction
-- Console prints slope and intercept
+## 👨‍💻 Author
 
----
-
-## 👨‍💼 Author
-- **Bishal Das**  
-  B.tech Student | Aspiring Software & AI Developer
-  
+**Bishal Das**  
+ CSE Student | Aspiring AI & Android Developer  
 GitHub: [@BishalDas1010](https://github.com/BishalDas1010)
 
 ---
 
-## 📄 License
-This project is for learning purposes. Free to use and modify.
+## 📜 License
+
+This repository is free for educational purposes. You’re welcome to fork, modify, or contribute.
 
