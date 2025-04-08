@@ -10,7 +10,6 @@ The dataset used is `placement (2).csv` which contains:
 - `package`: Placement package received (in LPA)
 
 ---
-
 ## 📌 Features
 - Manual implementation of Linear Regression (no use of `LinearRegression` from sklearn)
 - Calculates:
