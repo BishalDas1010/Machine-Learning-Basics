@@ -1,62 +1,59 @@
-from re import X
-# Liner  Regration from scrach
-
+from ast import Return
 import pandas as pd
+import matplotlib as plt 
 from sklearn.model_selection import train_test_split
 
-# data visulization
-import matplotlib.pyplot as plt
+
+df =pd.read_csv('cgpa_package_dataset.csv')
+x = df[['CGPA']]
+y = df[['Package(LPA)']]
 
 
-class LinearRegression:
-    def __init__(self):
-        self.m = None
-        self.b = None
-
-    def fit(self, x_train, y_train):
-        num = 0
-        den = 0
-
-        x_train = x_train.values.flatten()  # Convert to 1D array
-        y_train = y_train.values.flatten()
-
-        for i in range(len(x_train)):
-            num = num + ((x_train[i] - x_train.mean()) * (y_train[i] - y_train.mean()))
-            den = den + ((x_train[i] - x_train.mean()) ** 2)
-
-            # Slope
-        self.m = num / den
-        # Intercept
-        self.b = y_train.mean() - (self.m * x_train.mean())
-        print(f"THE SLOPE IS : {self.m}")
-        print(f"THE INTERSEPT  IS : {self.b}")
-
-    def predict(self, x_test):
-        return (self.m * x_train + self.b)
+x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2)
 
 
-import pandas as pd
-from sklearn.model_selection import train_test_split
-
-df = pd.read_csv('placement (2).csv')
-x = df[['cgpa']]
-y = df[['package']]
-x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=2)
-
-
-def main():
-    lr = LinearRegression()
-    lr.fit(x_train, y_train)
-
-    # data visulization
-    plt.scatter(x, y, color='green', label='Data points')
-    plt.plot(x_train, lr.predict(x_train), color='red', label='Regression line')
-
-    plt.xlabel('CGPA')
-    plt.ylabel('Package')
-    plt.grid()
-    plt.show()
+#model
+class lr:
+  def fit(self,x_train,y_train):
+    avg_x = 0
+    avg_y =0
+    for value in x_train['CGPA']:
+      avg_x = avg_x + value
+    for value in y_train['Package(LPA)']:
+      avg_y= avg_y + value
 
 
-if __name__ == "__main__":
-    main()
+    print(avg_y/y.size)
+
+    print(avg_x/x.size)
+
+
+    neu = 0 
+    deo = 0 
+
+    for i in range(len(x_train['CGPA'])):
+      neu += (x_train['CGPA'].iloc[i] - avg_x) * (y_train['Package(LPA)'].iloc[i] - avg_y)
+      deo += (x_train['CGPA'].iloc[i] - avg_x) ** 2
+
+    self.slope = neu / deo
+    self.intercept = avg_y - slope * avg_x
+
+    print("Slope:", self.slope)
+    print("Intercept:", self.intercept)
+
+  def pred(self,x_value)->float:
+    y_pread = self.slope * x_value+self.intercept
+    return  y_pread
+
+
+
+model = lr()
+model.fit(x_train=x_train,y_train= y_train)
+custom_input = float(input("input the CGPA :"))
+
+predicted =model.pred(custom_input)
+print(predicted)
+
+
+
+#test the Model 
