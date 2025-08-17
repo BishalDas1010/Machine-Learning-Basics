@@ -1,10 +1,10 @@
-# 📘 Machine Learning Algorithms — Study & Implementation from Scratch
+# Machine Learning Algorithms — Study & Implementation from Scratch
 
 Welcome to this hands-on repository dedicated to learning, implementing, and visualizing various **Machine Learning (ML) algorithms** from scratch using Python. Perfect for students, beginners, and aspiring ML engineers who want to understand **how algorithms work internally** — not just use them.
 
 ---
 
-## 🎯 Repository Goals
+##  Repository Goals
 
 - Understand the **mathematics** behind popular ML algorithms.
 - Implement algorithms from **scratch** without using high-level ML libraries.
@@ -13,7 +13,7 @@ Welcome to this hands-on repository dedicated to learning, implementing, and vis
 
 ---
 
-## 📚 Implemented Algorithms
+##  Implemented Algorithms
 
 | Algorithm | Type | Description |
 |----------|------|-------------|
@@ -25,11 +25,11 @@ Welcome to this hands-on repository dedicated to learning, implementing, and vis
 | Naive Bayes | Supervised | Probabilistic classifier based on Bayes' Theorem. *(coming soon)* |
 | Principal Component Analysis (PCA) | Unsupervised | Dimensionality reduction technique. *(coming soon)* |
 
-> ✅ More algorithms will be added progressively, including SVM, Random Forest, and Gradient Boosting!
+>> More algorithms will be added progressively, including SVM, Random Forest, and Gradient Boosting!
 
 ---
 
-## 🧠 Math Behind ML
+## Math Behind ML
 
 Every algorithm here focuses on:
 - Derivation of formulas
@@ -39,7 +39,7 @@ Every algorithm here focuses on:
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```bash
 ├── linear_regression.py         # Linear regression from scratch
@@ -53,26 +53,26 @@ Every algorithm here focuses on:
 
 
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
-- Python 🐍
+- Python 
 - Pandas & NumPy for data manipulation
 - Matplotlib for visualization
 - scikit-learn only for comparison (not used in from-scratch code)
 
 
 
-## 🚀 Getting Started
+## Getting Started
 
 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/ml-algorithms-from-scratch.git
+git clone <https://github.com/BishalDas1010/Machine-Learning-Basics.git>
 cd ml-algorithms-from-scratch
 ```
 
 2. Install required libraries
 ```bash
-pip install pandas matplotlib scikit-learn
+pip install pandas
 ```
 
 3. Run the code
@@ -82,7 +82,7 @@ python linear_regression.py
 
 ---
 
-## 👨‍💻 Author
+## :) Author
 
 **Bishal Das**  
  CSE Student | Aspiring AI & Android Developer  
@@ -90,7 +90,7 @@ GitHub: [@BishalDas1010](https://github.com/BishalDas1010)
 
 ---
 
-## 📜 License
+##  License
 
 This repository is free for educational purposes. You’re welcome to fork, modify, or contribute.
 
