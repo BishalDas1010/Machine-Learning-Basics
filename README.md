@@ -23,7 +23,8 @@ Welcome to this hands-on repository dedicated to learning, implementing, and vis
 | Decision Tree | Supervised | Tree-based structure for classification and regression. *(coming soon)* |
 | K-Means Clustering | Unsupervised | Partition data into k distinct clusters. *(coming soon)* |
 | Naive Bayes | Supervised | Probabilistic classifier based on Bayes' Theorem. *(coming soon)* |
-| Principal Component Analysis (PCA) | Unsupervised | Dimensionality reduction technique. *(coming soon)* |
+| Principal Component Analysis (PCA) | Unsupervised | Dimensionality reductio|
+| Z-score technique | data cleaning | 
 
 >> More algorithms will be added progressively, including SVM, Random Forest, and Gradient Boosting!
 
